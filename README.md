@@ -82,3 +82,48 @@ sudo chown -R `whoami` /usr/local
 
 - [] Add more npm packages
 - [] IMPORTANT: Add demo for this project to show the convenience and advantange of this project
+
+# 脚本执行过程列表
+
+- 安装 brew `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install | sed 's/https:\/\/github.com\/Homebrew\/brew/git:\/\/mirrors.ustc.edu.cn\/brew.git/g' | sed 's/https:\/\/github.com\/Homebrew\/homebrew-core/git:\/\/mirrors.ustc.edu.cn\/homebrew-core.git/g' | sed 's/\"fetch\"/\"fetch\", \"-q\"/g')" < /dev/null > /dev/nullss`
+- 安装 git `brew install git`
+
+- 禁止游客账户登录 `sudo bash install-steps/guest_account.sh disable`
+
+- 使用 F1 ~ F12 作为标准功能 `defaults write -globalDomain com.apple.keyboard.fnState -int 1`
+
+- 为所有控件启用全键盘访问 `defaults write NSGlobalDomain AppleKeyboardUIMode -int 3`
+
+- 自动隐藏和显示 Dock `defaults write com.apple.dock autohide -bool true`
+
+- 隐藏一些 app 图标，并且将 dock 布置在左边
+
+- 显示电量百分比 `Show battery percentage`
+
+- 禁用菜单栏透明度 `defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false`
+
+- 优化窗口调整速度 `defaults write NSGlobalDomain NSWindowResizeTime -float 0.001`
+
+- 始终显示文件扩展名 `defaults write NSGlobalDomain AppleShowAllExtensions -bool true`
+
+- 跳过图像验证
+
+- 配置 Finder
+
+- 启动触摸板出发点击
+
+- 启动三指拖拽
+
+- 显示 ~/Library 文件夹
+
+- 隐藏不常用的图标
+
+- 在菜单栏中隐藏 Siri 图标
+
+- 在菜单栏中隐藏输入法图标
+
+- 禁用 app 验证功能
+
+- 禁用自动更正
+
+- 允许模拟器的全屏模式
