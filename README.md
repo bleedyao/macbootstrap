@@ -127,3 +127,60 @@ sudo chown -R `whoami` /usr/local
 - 禁用自动更正
 
 - 允许模拟器的全屏模式
+
+- 安装 python3 `brew install python3`
+
+- 安装 iterm2, 设置背景图, 并做一些配置项
+
+- 安装 sourceTree `brew cask install sourcetree`
+
+- 安装微信 `brew cask install wechat`
+
+- 安装 chrome 并设置为默认浏览器
+
+- 安装 visual-studio-code, 并做最小配置
+
+- 安装 lrzsz，gnu-sed，coreutils
+
+- 安装 universal-ctags `brew install --HEAD universal-ctags/universal-ctags/`
+
+- 安装 redis, cmake, gawk, autojump, wget, nvm, exiv2, ssh-copy-id, imagemagick, catimg, gpg, icdiff, scmpuff, fzf, fd, the_silver_searcher, nvim, exiftool, archey, ranger
+
+- `brew install git-lfs && git lfs install`
+
+- `$(brew --prefix)/opt/fzf/install --all`
+
+- 备份以及配置 git config
+
+- 备份以及配置 zshrc
+
+- 备份以及配置 vim config
+
+- 备份以及配置 ESLint config
+
+- 备份以及配置 Ranger config
+
+- 安装搜狗输入法
+
+- 安装 Extension for preview
+
+- 安装 Zip tool
+
+- 安装 application
+    - 安装 Charles
+    - 安装 Dash
+    - 安装 Alfred
+
+- Powerline-font
+
+- python 升级
+
+- Gem update
+
+- nvm & npm install
+
+- hook login
+
+- 配置酷狗输入法
+
+- 备份以及配置 ssh

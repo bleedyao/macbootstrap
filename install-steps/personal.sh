@@ -1,4 +1,4 @@
-username='bestswifter'
+username='bleedyao'
 
 # Write script you want to use in the `if` block
 if [[ "$username" == $(whoami) ]]; then
@@ -6,8 +6,8 @@ if [[ "$username" == $(whoami) ]]; then
     brew cask install google-drive-file-stream
 
     # Git config
-    git config --global user.name bestswifter
-    git config --global user.email ktzhang@bestswifter.com
+    git config --global user.name bleedyao
+    git config --global user.email logcat001@gmail.com
 
     if [[ ! -d $HOME/.ssh ]]; then
         mkdir $HOME/.ssh

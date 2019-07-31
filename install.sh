@@ -4,15 +4,15 @@ source basic.sh
 sudo ./install-steps/macos.sh
 
 brew install python3
-pip3 install shadowsocks
+# pip3 install shadowsocks
 
 # install and use shadowsocks
-if not_tt_network; then
-    nohup sslocal -q -c ~/.macbootstrap/tools/netconf &> /private/tmp/nohup.out&
-    export ALL_PROXY=socks5://127.0.0.1:14179
-else
-    echo "You are in toutiao network, no need to use ss now"
-fi
+# if not_tt_network; then
+#     nohup sslocal -q -c ~/.macbootstrap/tools/netconf &> /private/tmp/nohup.out&
+#     export ALL_PROXY=socks5://127.0.0.1:14179
+# else
+#     echo "You are in toutiao network, no need to use ss now"
+# fi
 
 if [[ ! -e /Applications/iTerm.app ]]; then
     brew cask install iterm2
@@ -80,26 +80,26 @@ fi
 
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 brew install redis
-brew_install cmake
-brew_install gawk
-brew_install autojump
-brew_install wget
-brew_install nvm
-brew_install exiv2
-brew_install ssh-copy-id
-brew_install imagemagick
-brew_install catimg
-brew_install gpg
-brew_install icdiff
-brew_install scmpuff
-brew_install fzf
-brew_install fd
-brew_install the_silver_searcher
-brew_install nvim
-brew_install exiftool
-brew_install archey
-brew_install ranger
-brew_install git-lfs && git lfs install
+brew install cmake
+brew install gawk
+brew install autojump
+brew install wget
+brew install nvm
+brew install exiv2
+brew install ssh-copy-id
+brew install imagemagick
+brew install catimg
+brew install gpg
+brew install icdiff
+brew install scmpuff
+brew install fzf
+brew install fd
+brew install the_silver_searcher
+brew install nvim
+brew install exiftool
+brew install archey
+brew install ranger
+brew install git-lfs && git lfs install
 $(brew --prefix)/opt/fzf/install --all
 
 # link git config
