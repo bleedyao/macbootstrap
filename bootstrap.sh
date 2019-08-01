@@ -1,4 +1,5 @@
 #!bin/bash
+BRANCH='feature/install_list'
 [ -z "${BRANCH}" ] && export BRANCH="master"
 
 if [[ -e ~/.macbootstrap ]]; then
