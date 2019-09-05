@@ -1,8 +1,7 @@
 # install multiple software
 function brew_install() {
-    for i in $*
-    do
-        if ! brew ls --versions $i > /dev/null; then
+    for i in $*; do
+        if ! brew ls --versions $i >/dev/null; then
             brew install $i
         else
             echo "You have installed $i"
@@ -11,9 +10,8 @@ function brew_install() {
 }
 
 function brew_cask() {
-    for i in $*
-    do
-        if [[ ! -e /usr/local/bin/$i ]]; then
+    for i in $*; do
+        if [[ ! -e /Applications/$i.app ]]; then
             brew cask install $i
         else
             echo "You have installed $i"

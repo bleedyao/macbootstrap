@@ -9,6 +9,8 @@ brew_install nvim exiftool archey ranger
 brew_install git-lfs && git lfs install
 $(brew --prefix)/opt/fzf/install --all
 
+brew_cask iTerm SourceTree WeChat
+
 if [[ ! -e ~/.oh-my-zsh ]]; then
     curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 fi
