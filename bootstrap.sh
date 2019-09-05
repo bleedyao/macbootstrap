@@ -1,4 +1,6 @@
 #!bin/bash
+set -euxo pipefail
+
 [ -z "${BRANCH}" ] && export BRANCH="master"
 
 if [[ -e ~/.macbootstrap ]]; then
