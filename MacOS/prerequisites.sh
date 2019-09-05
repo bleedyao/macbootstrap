@@ -13,12 +13,3 @@ if [[ -e /usr/local/bin/git ]]; then
 else
     brew install git
 fi
-
-# remove old macbootstrap
-if [[ -e ~/.macbootstrap ]]; then
-  rm -rf ~/.macbootstrap
-fi
-
-# # update latest script
-git clone --depth=1 -b feature/myBoot https://github.com/bestswifter/macbootstrap.git ~/.macbootstrap
-cd ~/.macbootstrap
