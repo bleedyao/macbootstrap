@@ -2,14 +2,14 @@
 
 . ./MacOS/mac_base.sh
 
-brew_install python3 gnu-sed lrzsz coreutils redis cmake gawk
-brew_install autojump wget nvm exiv2 ssh-copy-id imagemagick
-brew_install catimg gpg icdiff scmpuff fzf fd the_silver_searcher
-brew_install nvim exiftool archey ranger
-brew_install git-lfs && git lfs install
+brew_install python3 gnu-sed lrzsz coreutils redis cmake gawk \
+autojump wget nvm exiv2 ssh-copy-id imagemagick \
+catimg gpg icdiff scmpuff fzf fd the_silver_searcher \
+nvim exiftool archey ranger \
+git-lfs && git lfs install \ 
 $(brew --prefix)/opt/fzf/install --all
 
-brew_cask iTerm SourceTree WeChat
+brew_cask iTerm SourceTree WeChat Google\ Chrome Google\ web\ designer
 
 if [[ ! -e ~/.oh-my-zsh ]]; then
     curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
